@@ -1,0 +1,17 @@
+<!--Form pour ajouter un nv Hero-->
+<div class="row mt-5">
+    <div class="col-3">
+        <input type="text" placeholder="Name" [(ngModel)]="hero.name" class="form-control">
+    </div>
+
+    <div class="col-3">
+        <input type="text" placeholder="Power" [(ngModel)]="hero.power" class="form-control">
+    </div>
+
+    <div class="col-3">
+        <input type="text" placeholder="Img URL" [(ngModel)]="hero.image" class="form-control">
+    </div>
+    <div class="col-3">
+        <button class="btn form-control text-light" (click)="update()">Update</button>
+    </div>
+</div>

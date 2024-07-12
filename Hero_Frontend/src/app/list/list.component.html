@@ -1,0 +1,26 @@
+
+<div class="row mt-5">
+   
+    <div class="col-3" *ngFor="let hero of heros"> 
+      <div [ngClass]="{'card p-1' : true , 
+        'height' : hero.power>100,
+         'medium' : hero.power>=50,
+          'low': hero.power<50 }">
+        <div class="card-image">
+            <img [src]="hero.image" alt="" class="w-100" height="300" width="300">
+        </div>
+        <div class="card-body">
+            <h2>{{hero.name}}</h2>
+            <h4>{{hero.power}}</h4>
+            <button class="btn btn-danger" (click)="delete(hero._id)">Delete</button>
+        </div>
+      </div>
+    
+    
+      </div>
+      
+  
+  
+  
+   </div>
+  

@@ -1,0 +1,37 @@
+<h2>Salut ya jma3a </h2>
+<hr>
+<h2>ahla w sahla </h2>
+
+
+<!-- String Binding -->
+
+<!-- <h2>my name is wala hammemi</h2>
+<h4>my age is 55</h4> -->
+<h2>my name is {{name}}</h2>
+<h4>my age is {{age}}</h4>
+
+  <!-- Property Binding -->
+<img [src]="urlImage" [alt]="altImage">
+ <br>
+   <!-- Event binding -->
+   <button (click)="change()">Click Here</button> <br> <br>
+
+
+    <!-- tow way data binding -->
+   <input type="text" [(ngModel)]="text">
+   <h3>{{text}}</h3>
+
+
+   <!-- Exercice -->
+     <h1> Exercice</h1>
+
+   <h2>my name is {{user.name}}</h2>
+   <h2>my name is {{user.age}}</h2>
+   <img [src]="user.image" [alt]=" "> <br>
+   <input type="text" [(ngModel)]="myName"> <br>
+   <h3>{{myName}}</h3>
+   <button (click)="changeName()">Changer Votre Nom</button> <br> <br>
+
+
+
+   
